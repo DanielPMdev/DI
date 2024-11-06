@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="498.0" prefWidth="1248.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dpm.alumnosjavafx.ControladorTabla">
+   <children>
+      <MenuBar prefHeight="27.0" prefWidth="1248.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Archivo">
+            <items>
+              <MenuItem fx:id="miCargar" mnemonicParsing="false" onAction="#accionCargar" text="Cargar desde CSV" />
+                  <MenuItem fx:id="miGuardar" mnemonicParsing="false" onAction="#accionGuardar" text="Guardar en CSV" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem fx:id="miSalir" mnemonicParsing="false" onAction="#accionSalir" text="Salir" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Ayuda">
+            <items>
+              <MenuItem fx:id="miAcerca" mnemonicParsing="false" onAction="#lanzarAcerca" text="Acerca De" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <SplitPane dividerPositions="0.6043707611152976" layoutY="26.0" prefHeight="474.0" prefWidth="1248.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                   <TableView fx:id="tablaContenido" prefHeight="472.0" prefWidth="811.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                       <columns>
+                           <TableColumn fx:id="columnaNombre" prefWidth="75.0" text="Nombre" />
+                           <TableColumn fx:id="columnaApellidos" prefWidth="75.0" text="Apellidos" />
+                           <TableColumn fx:id="columnaPoblacion" prefWidth="85.0" text="Población" />
+                           <TableColumn fx:id="columnaCurso" prefWidth="98.0" text="Curso" />
+                           <TableColumn fx:id="columnaEmail" prefWidth="190.0" text="Email" />
+                           <TableColumn fx:id="columnaMatricula" minWidth="0.0" prefWidth="138.0" text="Fecha Matrícula" />
+                           <TableColumn fx:id="columnaCarnet" minWidth="0.0" prefWidth="88.0" text="Carnet" />
+                       </columns>
+                   </TableView>
+
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="472.0" prefWidth="608.0">
+               <children>
+                  <Label fx:id="lbDetalles" alignment="CENTER" prefHeight="22.0" prefWidth="385.0" text="Detalles del Alumno:">
+                     <font>
+                        <Font name="JetBrains Mono SemiBold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbNombre" layoutX="34.0" layoutY="49.0" text="Nombre:" />
+                  <TextField fx:id="txfNombre" layoutX="193.0" layoutY="45.0" prefHeight="24.0" prefWidth="180.0" />
+                  <Label fx:id="lbApellidos" layoutX="31.0" layoutY="87.0" text="Apellidos:" />
+                  <Label fx:id="lbPoblacion" layoutX="32.0" layoutY="126.0" text="Poblacion:" />
+                  <Label fx:id="lbCurso" layoutX="42.0" layoutY="162.0" text="Curso:" />
+                  <Label fx:id="lbEmail" layoutX="43.0" layoutY="201.0" text="Email:" />
+                  <Label fx:id="lbMatricula" layoutX="14.0" layoutY="237.0" text="Fecha Matricula" />
+                  <Label fx:id="lbCarnet" layoutX="41.0" layoutY="299.0" text="Carnet" />
+                  <TextField fx:id="txfApellidos" layoutX="193.0" layoutY="83.0" prefHeight="24.0" prefWidth="180.0" />
+                  <TextField fx:id="txfPoblacion" layoutX="194.0" layoutY="122.0" prefHeight="24.0" prefWidth="180.0" />
+                   <ComboBox fx:id="cbCurso" layoutX="193.0" layoutY="158.0" prefHeight="24.0" prefWidth="180.0" value="1º DAM">
+                       <items>
+                           <FXCollections fx:factory="observableArrayList">
+                               <String fx:value="1º DAM" />
+                               <String fx:value="2º DAM" />
+                           </FXCollections>
+                       </items>
+                   </ComboBox>
+                   <TextField fx:id="txfEmail" layoutX="194.0" layoutY="197.0" prefHeight="24.0" prefWidth="180.0" />
+                  <RadioButton fx:id="rbSi" layoutX="253.0" layoutY="283.0" mnemonicParsing="false" text="Si">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="rgCarnet" />
+                     </toggleGroup></RadioButton>
+                  <RadioButton fx:id="rbNo" layoutX="251.0" layoutY="313.0" mnemonicParsing="false" selected="true" text="No" toggleGroup="$rgCarnet" />
+                  <Button fx:id="btNuevo" layoutX="134.0" layoutY="412.0" mnemonicParsing="false" onAction="#accionNuevo" text="New" />
+                  <DatePicker fx:id="dpMatricula" layoutX="195.0" layoutY="233.0" prefHeight="24.0" prefWidth="180.0" />
+                  <Button fx:id="btEdit" layoutX="204.0" layoutY="412.0" mnemonicParsing="false" onAction="#accionEdit" text="Edit" />
+                  <Button fx:id="btDelete" layoutX="269.0" layoutY="412.0" mnemonicParsing="false" onAction="#accionDelete" text="Delete" />
+                  <Button fx:id="btLimpiar" layoutX="350.0" layoutY="412.0" mnemonicParsing="false" onAction="#accionLimpiar" text="Limpiar" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</Pane>

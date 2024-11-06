@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="344.0" prefWidth="503.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dpm.alumnosjavafx.ControladorAcercaDe">
+   <children>
+      <Label layoutX="57.0" layoutY="63.0" text="Este programa ha sido realizado por:">
+         <font>
+            <Font name="JetBrains Mono Medium" size="18.0" />
+         </font></Label>
+      <Label layoutX="138.0" layoutY="96.0" text="Daniel Porras Morales">
+         <font>
+            <Font name="JetBrains Mono SemiBold" size="18.0" />
+         </font></Label>
+      <Label fx:id="lCorreo" layoutX="143.0" layoutY="136.0" text="danielpm.dev@gmail.com" />
+      <Button fx:id="btSalir" layoutX="223.0" layoutY="183.0" mnemonicParsing="false" onAction="#accionSalir" text="Salir">
+         <font>
+            <Font name="JetBrains Mono SemiBold" size="13.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="imgGithub" fitHeight="64.0" fitWidth="64.0" layoutX="159.0" layoutY="240.0" onMouseClicked="#accionAbrir" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@github.png" />
+         </image></ImageView>
+      <ImageView fx:id="imgLinkedin" fitHeight="64.0" fitWidth="64.0" layoutX="280.0" layoutY="240.0" onMouseClicked="#accionAbrir" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@linkedin.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btCopy" layoutX="329.0" layoutY="132.0" mnemonicParsing="false" onAction="#accionCopy" text="Copiar" />
+   </children>
+</AnchorPane>

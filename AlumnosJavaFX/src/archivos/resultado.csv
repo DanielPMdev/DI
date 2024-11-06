@@ -1,0 +1,8 @@
+Nombre;Apellidos;Poblacion;Curso;Email;FechaMatricula;Carnet
+Juan;Pérez;Madrid;2º DAM;juan.perez@gmail.com;2023-09-15;true
+María;Gómez;Barcelona;1º DAM;maria.gomez@gmail.com;2022-10-01;false
+Pedro;Martínez;Valencia;2º DAM;pedro.martinez@gmail.com;2023-01-10;true
+Lucía;Suárez;Sevilla;1º DAM;lucia.suarez@gmail.com;2022-09-25;false
+Daniel;Porras;Tresjuncos;2º DAM;daniel@gmail.com;2024-11-01;true
+Fernando;Sevilla;Tomelloso;2º DAM;fernando@gmail.com;2024-11-01;false
+Raquel;Cobo;Tomelloso;1º DAM;raquel@gmail.com;2024-10-08;true

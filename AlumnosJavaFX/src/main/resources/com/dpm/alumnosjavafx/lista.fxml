@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="498.0" prefWidth="603.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dpm.alumnosjavafx.ControladorLista">
+    <children>
+        <MenuBar prefHeight="27.0" prefWidth="603.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="Archivo">
+                    <items>
+                        <MenuItem fx:id="miCargar" mnemonicParsing="false" onAction="#accionCargar" text="Cargar desde CSV" />
+                        <MenuItem fx:id="miGuardar" mnemonicParsing="false" onAction="#accionGuardar" text="Guardar en CSV" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem fx:id="miSalir" mnemonicParsing="false" onAction="#accionSalir" text="Salir" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Ayuda">
+                    <items>
+                        <MenuItem fx:id="miAcerca" mnemonicParsing="false" onAction="#lanzarAcerca" text="Acerca De" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+      <Button fx:id="btImportar" layoutX="43.0" layoutY="97.0" mnemonicParsing="false" onAction="#accionCargar" text="Importar" />
+      <Button fx:id="btExportar" layoutX="44.0" layoutY="142.0" mnemonicParsing="false" onAction="#accionGuardar" text="Exportar" />
+      <ScrollPane layoutX="159.0" layoutY="68.0">
+         <content>
+            <ListView fx:id="listaContenido" prefHeight="394.0" prefWidth="411.0" />
+         </content>
+      </ScrollPane>
+    </children>
+</Pane>

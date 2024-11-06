@@ -1,0 +1,5 @@
+nombre,apellidos,poblacion,curso,email,fechaMatricula,carnet
+Juan,Pérez,Madrid,2º DAM,juan.perez@gmail.com,15/09/2023,true
+María,Gómez,Barcelona,1º DAM,maria.gomez@gmail.com,01/10/2022,false
+Pedro,Martínez,Valencia,2º DAM,pedro.martinez@gmail.com,10/01/2023,true
+Lucía,Suárez,Sevilla,1º DAM,lucia.suarez@gmail.com,25/09/2022,false
