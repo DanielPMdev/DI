@@ -1,0 +1,5 @@
+.boton-ganador {
+    -fx-border-color: red;
+    -fx-border-width: 0 0 8px 0; /* Ajusta el grosor y posición de la línea */
+    -fx-border-radius: 0;
+}

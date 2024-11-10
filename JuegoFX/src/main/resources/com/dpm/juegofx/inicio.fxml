@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dpm.juegofx.InicioControlador">
+   <children>
+      <Label layoutX="149.0" layoutY="49.0" text="Bienvenido a Mi Juego" textAlignment="CENTER">
+         <font>
+            <Font name="JetBrains Mono SemiBold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="btIniciar" layoutX="229.0" layoutY="285.0" mnemonicParsing="false" onAction="#accionIniciar" text="Iniciar el Juego">
+         <font>
+            <Font name="JetBrains Mono SemiBold" size="13.0" />
+         </font>
+      </Button>
+      <TextField fx:id="tfJugador1" layoutX="215.0" layoutY="135.0" prefHeight="26.0" prefWidth="267.0" promptText="Introduce el Nombre del Jugador:" text="Jugador 1">
+         <font>
+            <Font name="JetBrains Mono SemiBold" size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="tfJugador2" layoutX="215.0" layoutY="200.0" prefHeight="24.0" prefWidth="267.0" promptText="Introduce el Nombre del Jugador:" text="Jugador 2">
+         <font>
+            <Font name="JetBrains Mono SemiBold" size="13.0" />
+         </font>
+      </TextField>
+      <Label layoutX="41.0" layoutY="140.0" text="Nombre Jugador 1:">
+         <font>
+            <Font name="JetBrains Mono SemiBold" size="13.0" />
+         </font></Label>
+      <Label layoutX="41.0" layoutY="205.0" text="Nombre Jugador 2:">
+         <font>
+            <Font name="JetBrains Mono SemiBold" size="13.0" />
+         </font></Label>
+      <Label layoutX="214.0" layoutY="92.0" text="Realizado por DanielPM">
+         <font>
+            <Font name="JetBrains Mono SemiBold" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

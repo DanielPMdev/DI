@@ -1,0 +1,23 @@
+package com.dpm.juegofx;
+
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+
+import java.io.IOException;
+
+public class TresEnRaya extends Application {
+    @Override
+    public void start(Stage stage) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(TresEnRaya.class.getResource("inicio.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 550, 350);
+        stage.setTitle("Juego de Tres en Raya");
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    public static void main(String[] args) {
+        launch();
+    }
+}
